@@ -24,31 +24,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Brock Sakai</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Brock Sakai">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
     #view-source {
       position: fixed;
@@ -80,7 +59,7 @@
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <img src="Logo.png" width="200px">
+              <img src="image/Logo.png" width="200px">
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
@@ -88,7 +67,7 @@
                 Sakai 手机版是针对布鲁克大学的教育系统量身定制的第三方手机APP，使用 Sakai 官方 KeitaiAPI
               </div>
               <div class="mdl-card__actions">
-                <a href="KeitaiAPI.pdf" class="mdl-button">查看官方 KeitaiAPI 手册</a>
+                <a href="file/KeitaiAPI.pdf" class="mdl-button">查看官方 KeitaiAPI 手册</a>
               </div>
             </div>
           </section>
@@ -97,7 +76,9 @@
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <center><h4>立即下载</h4></center>
-                <center><a href="https://apps.apple.com/ca/app/id1529380859" style="display:inline-block;overflow:hidden;background:url(appstore.svg) no-repeat;width:270px;height:80px;"></a></center>
+                <center><a href="https://apps.apple.com/ca/app/id1529380859" style="display:inline-block;overflow:hidden;background:url(image/appstore.svg) no-repeat;width:270px;height:80px;"></a></center>
+                <br><br>
+                <center><a href="https://apps.apple.com/ca/app/id1529380859" style="display:inline-block;overflow:hidden;width:270px;height:80px;"><img src="image/macappstore.png" width="270px"></a></center>
               </div>
             </div>
           </section>
@@ -112,9 +93,9 @@
                 关注: 随时关注是否出成绩了<br>
                 安全: 使用官方 ADFS 登录，不会保存您的个人信息<br><br>
                 
-                <img src="home.jpeg" style="" width="200px">
-                <img src="adfs.png" style="" width="200px">
-                <img src="grade.jpeg" style="" width="200px">
+                <img src="image/home.jpeg" style="" width="200px">
+                <img src="image/adfs.png" style="" width="200px">
+                <img src="image/grade.jpeg" style="" width="200px">
                 </center>
               </div>
             </div>
@@ -124,14 +105,16 @@
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <h4>Privacy and Terms 隐私条例</h4>
-Brock Sakai 及其开发人员非常致力于确保您的信息安全。 Brock Sakai 不会手机您的任何信息。<br><br>
+Brock Sakai 及其开发人员非常致力于确保您的信息安全。 Brock Sakai 不会使用您的任何信息。<br><br>
 
-Brock Sakai 使用 cookie 来管理与 Sakai 服务器的会话。由于 Sakai 没有用于验证第三方服务（例如 Brock Sakai）的标准方法，因此必须存储 cookie 才能使该应用程序正常运行。 Brock Sakai 将不会看到您的密码，您可以通过 Web 视图中的 Brock adfs 身份验证完成了身份验证。<br><br>但如果需要启用自动登录，您的账户信息将会保存在您的手机本地，并且不会上传到任何地方，可以随时完整清除，卸载后也将消失。<br><br>
+Brock Sakai 使用 cookie 来管理与 Sakai 服务器的会话。由于 Sakai 没有用于验证第三方服务（例如 Brock Sakai）的标准方法，因此必须存储 cookie 才能使该应用程序正常运行。 Brock Sakai 将不会看到您的密码，您可以通过 Web 视图中的 Brock adfs 身份验证来完成登录验证。<br><br>但如果需要启用自动登录，您的账户信息将会保存在您的手机本地，并且不会上传到任何地方，可以随时完整清除，卸载后也将消失。<br><br>
 
-如果您是布鲁克大学的学生，则在使用此应用程序时，还应遵守布鲁克大学的学术诚信政策以及对布鲁克大学Sakai LMS设置的任何其他规则和限制。
+Brock Sakai IOS版 使用 Google Firebase 服务跟踪功能使用情况和崩溃报告。为了了解有关 Google Firebase 可以从您那里收集哪些数据的更多信息，请参阅 <a href="https://firebase.google.com/support/privacy">Google Firebase</a> 隐私政策。通过这些服务，Brock Sakai 仅收集完全匿名的设备信息和崩溃报告，而这些报告不会泄露有关您的任何其他信息。这些有助于改进 Brock Sakai，并使开发人员将精力集中在最重要的领域。IP地址收集也已禁用，Brock Sakai 不会收集私密信息。<br><br>
+
+如果您是布鲁克大学的学生，则在使用此应用程序时，还应遵守布鲁克大学的<a href="https://brocku.ca/academic-integrity/">学术诚信政策</a>以及对布鲁克大学 <a href="https://kumu.brocku.ca/sakai/Main_Page">Sakai LMS</a> 设置的任何其他规则和限制。
               </div>
               <div class="mdl-card__actions">
-                <a href="https://github.com/KrunkZhou/LmsApp" class="mdl-button">Read our features</a>
+                <a href="https://github.com/KrunkZhou/LmsApp" class="mdl-button">View our SourceCode</a>
               </div>
             </div>
           </section>
@@ -139,12 +122,21 @@ Brock Sakai 使用 cookie 来管理与 Sakai 服务器的会话。由于 Sakai �
 
         <div class="mdl-layout__tab-panel" id="beta">
           
-          
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <center><h4>参与Beta测试</h4></center>
-                <center><a href="https://testflight.apple.com/join/Wm5I8YNI" style="display:inline-block;overflow:hidden;background:url(appstore.svg) no-repeat;width:270px;height:80px;"></a></center>
+                <p>如果您希望在 Brock Sakai 应用的实验性功能发布之前抢先试用，不妨加入 Beta 版测试人员计划。作为 Beta 版测试人员，您将会成为该应用的开发过程中非常重要的一环。
+                <br><br>您的参与和反馈将有助于我们发布更完善的应用版本。</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <center><h4>立即加入</h4></center>
+                <center><a href="more/testflight.html" style="display:inline-block;overflow:hidden;background:url(image/appstore.svg) no-repeat;width:270px;height:80px;"></a></center>
               </div>
             </div>
           </section>
