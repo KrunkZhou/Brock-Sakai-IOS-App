@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "0f6-aI-p9Q"; */
+"0f6-aI-p9Q.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "您的所有信息只保留在本地"; ObjectID = "44e-RA-Fn8"; */
+"44e-RA-Fn8.text" = "您的所有信息只保留在本地";
+
+/* Class = "UILabel"; text = "登录后可在设置中配置自动登录"; ObjectID = "DFk-S7-7uD"; */
+"DFk-S7-7uD.text" = "登录后可在设置中配置自动登录";
+
+/* Class = "UIViewController"; title = "Login"; ObjectID = "DVs-bM-bzA"; */
+"DVs-bM-bzA.title" = "Login";
+
+/* Class = "UILabel"; text = "Brock University 第三方 Sakai"; ObjectID = "ZP1-QA-44E"; */
+"ZP1-QA-44E.text" = "Brock University 第三方 Sakai";
+
+/* Class = "UIButton"; normalTitle = "配置自动登录"; ObjectID = "ZbV-U9-QDC"; */
+"ZbV-U9-QDC.normalTitle" = "配置自动登录";
+
+/* Class = "UINavigationItem"; title = "登录"; ObjectID = "iWs-Lm-a2S"; */
+"iWs-Lm-a2S.title" = "登录";
+
+/* Class = "UILabel"; text = "请参考设置中的“隐私条例”"; ObjectID = "z95-f5-7bt"; */
+"z95-f5-7bt.text" = "请参考设置中的“隐私条例”";

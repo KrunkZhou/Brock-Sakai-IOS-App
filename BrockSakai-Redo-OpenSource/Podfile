@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'Brock Sakai' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Brock Sakai
+  pod 'Alamofire'
+  pod 'RATreeView', :git => 'https://github.com/PRAN1999/RATreeView'
+  pod 'M13Checkbox'
+  pod 'WordPress-Aztec-iOS'
+  pod 'WordPress-Editor-iOS'
+  pod 'Gridicons', :podspec => 'https://raw.github.com/Automattic/Gridicons-iOS/develop/Gridicons.podspec'
+  pod 'Toast-Swift'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Performance'
+
+end
+
+post_install do |installer|
+ installer.pods_project.targets.each do |target|
+ target.build_configurations.each do |config|
+ config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+ config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+ config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+ config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+ end
+ end
+end

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iaE-1R-x95">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabs Controller-->
+        <scene sceneID="6rX-ec-kpk">
+            <objects>
+                <tabBarController storyboardIdentifier="tabs" automaticallyAdjustsScrollViewInsets="NO" id="iaE-1R-x95" customClass="TabsController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9nx-a2-woP"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="hu3-lw-Ls4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.7803921568627451" green="0.047058823529411764" blue="0.096773806680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="KBr-vK-S6R" kind="relationship" relationship="viewControllers" id="mX7-w9-e3Y"/>
+                        <segue destination="lVB-xW-D7w" kind="relationship" relationship="viewControllers" id="WsG-9l-k0m"/>
+                        <segue destination="xOy-Jg-zro" kind="relationship" relationship="viewControllers" id="Mk7-IU-wgP"/>
+                        <segue destination="nbo-G7-vlI" kind="relationship" relationship="viewControllers" id="GzN-0k-Ec7"/>
+                        <segue destination="YUo-5W-PhK" kind="relationship" relationship="viewControllers" id="rCp-pl-Bk7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBD-Df-xe1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1644" y="139"/>
+        </scene>
+        <!--HomeView-->
+        <scene sceneID="bVW-8i-Sof">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeView" storyboardName="HomeView" referencedIdentifier="HomeView" id="3ic-QF-xnF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LCq-JN-BaO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO1-FZ-VDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961.60000000000002" y="138.53073463268368"/>
+        </scene>
+        <!--Gradebook-->
+        <scene sceneID="Fkm-K0-3BT">
+            <objects>
+                <navigationController title="Gradebook" automaticallyAdjustsScrollViewInsets="NO" id="lVB-xW-D7w" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gradebook" image="gradebook" id="0Og-T9-bdp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="fwu-CL-9sk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7803921568627451" green="0.14509803921568626" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AG5-n6-Kjw" kind="relationship" relationship="rootViewController" id="kI8-7v-FXe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqn-Vj-CNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="-539.28035982008998"/>
+        </scene>
+        <!--GradebookView-->
+        <scene sceneID="pAx-oA-2Wp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GradebookView" referencedIdentifier="GradebookView" id="AG5-n6-Kjw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dz3-sH-vO7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI2-EZ-osK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="-553"/>
+        </scene>
+        <!--Announcements-->
+        <scene sceneID="0iQ-K1-qRS">
+            <objects>
+                <navigationController title="Announcements" automaticallyAdjustsScrollViewInsets="NO" id="xOy-Jg-zro" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alerts" image="announcements" id="w1b-JI-vCv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="l6s-og-hG5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7803921568627451" green="0.14509803921568626" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tmz-b4-HQe" kind="relationship" relationship="rootViewController" id="nzA-lB-oMc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSF-Ev-vyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="-1228.3358320839582"/>
+        </scene>
+        <!--AnnouncementView-->
+        <scene sceneID="oKU-eM-oth">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AnnouncementView" storyboardName="AnnouncementView" referencedIdentifier="AnnouncementView" id="Tmz-b4-HQe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bzK-cT-ASa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJy-cZ-7e4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-1233"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="How-ve-hlX">
+            <objects>
+                <navigationController title="Assignments" automaticallyAdjustsScrollViewInsets="NO" id="nbo-G7-vlI" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assignments" image="assignments" id="b8h-HD-Bd2"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="D0m-UO-6Yn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.78039215689999997" green="0.1450980392" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="14w-Sc-dkO" kind="relationship" relationship="rootViewController" id="1Je-WX-aoi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbR-IT-yHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="834"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Lje-qz-lkt">
+            <objects>
+                <navigationController title="Settings" id="YUo-5W-PhK" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="5iZ-yS-4bm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="s4m-uV-Aao">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.78039215689999997" green="0.047058823530000002" blue="0.096773806680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mRj-I6-pfp" kind="relationship" relationship="rootViewController" id="oSF-pz-M8m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vni-1y-vcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="1616"/>
+        </scene>
+        <!--SettingsView-->
+        <scene sceneID="RSU-fm-S4T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsView" id="mRj-I6-pfp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cj5-JP-jDb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbT-dS-IvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="1585"/>
+        </scene>
+        <!--AssignmentView-->
+        <scene sceneID="uFK-Ud-Jlm">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AssignmentView" storyboardName="AssignmentView" referencedIdentifier="AssignmentView" id="14w-Sc-dkO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Pp-rP-NE2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dC5-fR-am3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="834"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="VEV-YB-qKo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KBr-vK-S6R" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="l4C-jd-KZb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="dKI-ep-II6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7803921568627451" green="0.14509803921568626" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3ic-QF-xnF" kind="relationship" relationship="rootViewController" id="sdS-pL-2FN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qq-BU-Tcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="announcements" width="46.5" height="46.5"/>
+        <image name="assignments" width="45" height="45"/>
+        <image name="gradebook" width="41.25" height="41.25"/>
+        <image name="home" width="45" height="45"/>
+        <image name="settings" width="45" height="45"/>
+    </resources>
+</document>

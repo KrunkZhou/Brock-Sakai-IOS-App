@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RZT-oD-8f1">
+            <objects>
+                <navigationController storyboardIdentifier="loginNavigation" id="dGV-tK-eCY" customClass="NavigationController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="83k-Uv-fI8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.78039215689999997" green="0.1450980392" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                            <color key="textColor" red="0.78039215689999997" green="0.1450980392" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DVs-bM-bzA" kind="relationship" relationship="rootViewController" id="tSn-ce-wtr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGh-mg-Jeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1087" y="109"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Mak-q4-Bs0">
+            <objects>
+                <viewController title="Login" id="DVs-bM-bzA" customClass="LoginViewController" customModule="SakaiClientiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="634-l2-G4z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wyV-Xz-lPn">
+                                <rect key="frame" x="107" y="305" width="200" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0f6-aI-p9Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="77"/>
+                                        <color key="backgroundColor" red="0.78039215689999997" green="0.1450980392" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginWithNetId:" destination="DVs-bM-bzA" eventType="touchUpInside" id="Tzm-Dg-Zsg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbV-U9-QDC">
+                                        <rect key="frame" x="0.0" y="87" width="200" height="77"/>
+                                        <color key="backgroundColor" red="0.78039215689999997" green="0.1450980392" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="配置自动登录">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginWithEmail:" destination="DVs-bM-bzA" eventType="touchUpInside" id="1iC-ij-ma4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Uuq-dx-1lR"/>
+                                    <constraint firstAttribute="height" constant="164" id="Y0i-oA-Xhk"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录后可在设置中配置自动登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFk-S7-7uD">
+                                <rect key="frame" x="85.666666666666671" y="500" width="242.66666666666663" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的所有信息只保留在本地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44e-RA-Fn8">
+                                <rect key="frame" x="103" y="544.33333333333337" width="208" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请参考设置中的“隐私条例”" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z95-f5-7bt">
+                                <rect key="frame" x="104.33333333333333" y="574" width="205.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brock University 第三方 Sakai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP1-QA-44E">
+                                <rect key="frame" x="69" y="181" width="276" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zSg-nB-z0T"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wyV-Xz-lPn" firstAttribute="centerY" secondItem="zSg-nB-z0T" secondAttribute="centerY" id="6mn-Ln-uYc"/>
+                            <constraint firstItem="44e-RA-Fn8" firstAttribute="top" secondItem="DFk-S7-7uD" secondAttribute="bottom" constant="24" id="DBQ-cz-drV"/>
+                            <constraint firstItem="DFk-S7-7uD" firstAttribute="top" secondItem="ZbV-U9-QDC" secondAttribute="bottom" constant="31" id="Geg-eY-5fq"/>
+                            <constraint firstItem="DFk-S7-7uD" firstAttribute="centerX" secondItem="634-l2-G4z" secondAttribute="centerX" id="M1Q-Lj-ISf"/>
+                            <constraint firstItem="wyV-Xz-lPn" firstAttribute="centerX" secondItem="zSg-nB-z0T" secondAttribute="centerX" id="Opp-fd-0JB"/>
+                            <constraint firstItem="z95-f5-7bt" firstAttribute="centerX" secondItem="634-l2-G4z" secondAttribute="centerX" id="OvV-UW-TTR"/>
+                            <constraint firstItem="z95-f5-7bt" firstAttribute="top" secondItem="ZbV-U9-QDC" secondAttribute="bottom" constant="105" id="USP-Pc-Xe9"/>
+                            <constraint firstItem="44e-RA-Fn8" firstAttribute="centerX" secondItem="634-l2-G4z" secondAttribute="centerX" id="kG0-Qv-hy4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="iWs-Lm-a2S"/>
+                    <connections>
+                        <outlet property="emailButton" destination="ZbV-U9-QDC" id="ZUj-mt-qtF"/>
+                        <outlet property="netIdButton" destination="0f6-aI-p9Q" id="UX6-2D-1zp"/>
+                        <outlet property="stackView" destination="wyV-Xz-lPn" id="znc-uL-T6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5XF-nM-CEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.405797101449281" y="107.8125"/>
+        </scene>
+    </scenes>
+</document>

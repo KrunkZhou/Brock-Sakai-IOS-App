@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "Gradebook"; ObjectID = "0Og-T9-bdp"; */
+"0Og-T9-bdp.title" = "成绩";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "5iZ-yS-4bm"; */
+"5iZ-yS-4bm.title" = "设置";
+
+/* Class = "UINavigationController"; title = "Settings"; ObjectID = "YUo-5W-PhK"; */
+"YUo-5W-PhK.title" = "设置";
+
+/* Class = "UITabBarItem"; title = "Assignments"; ObjectID = "b8h-HD-Bd2"; */
+"b8h-HD-Bd2.title" = "作业";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "l4C-jd-KZb"; */
+"l4C-jd-KZb.title" = "课程";
+
+/* Class = "UINavigationController"; title = "Gradebook"; ObjectID = "lVB-xW-D7w"; */
+"lVB-xW-D7w.title" = "成绩";
+
+/* Class = "UINavigationController"; title = "Assignments"; ObjectID = "nbo-G7-vlI"; */
+"nbo-G7-vlI.title" = "作业";
+
+/* Class = "UITabBarItem"; title = "Alerts"; ObjectID = "w1b-JI-vCv"; */
+"w1b-JI-vCv.title" = "通知";
+
+/* Class = "UINavigationController"; title = "Announcements"; ObjectID = "xOy-Jg-zro"; */
+"xOy-Jg-zro.title" = "通知";

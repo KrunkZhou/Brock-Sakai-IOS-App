@@ -1,0 +1,47 @@
+{
+    "icons": [
+        {
+            "subjectName": "COMPUTER SCIENCE",
+            "subjectCode": "101",
+            "iOS": "F11F",
+            "Android": ""
+        },
+        {
+            "subjectName": "MATHEMATICS",
+            "subjectCode": "102",
+            "iOS": "F111",
+            "Android": "PI"
+        },
+        {
+            "subjectName": "ECONOMICS",
+            "subjectCode": "103",
+            "iOS": "F124",
+            "Android": ""
+        },
+        {
+            "subjectName": "GEOGRAPHY",
+            "subjectCode": "104",
+            "iOS": "F137",
+            "Android": ""
+        },
+        {
+            "subjectName": "MEDIA STUDIES",
+            "subjectCode": "105",
+            "iOS": "F147",
+            "Android": ""
+        },
+        {
+            "subjectName": "ERSC",
+            "subjectCode": "106",
+            "iOS": "F138",
+            "Android": ""
+        },
+        {
+            "subjectName": "ENGLISH AS A SECOND LANGUAGE",
+            "subjectCode": "107",
+            "iOS": "F127",
+            "Android": ""
+        }
+        
+    ]
+}
