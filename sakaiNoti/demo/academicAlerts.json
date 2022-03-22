@@ -1,0 +1,79 @@
+{
+  "alerts": [
+    {
+      "alertType": "ACADEMIC",
+      "deferred": false,
+      "event": "asn.new.assignment",
+      "eventDate": {
+        "epochSecond": 1603984850,
+        "nano": 0
+      },
+      "fromDisplayName": "Cody Dennis",
+      "fromUser": "b7c7335357acbb313ed07c8d7e1c85a4",
+      "id": 5535640,
+      "ref": "\/assignment\/a\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/569ba4e8-18f4-4d1f-b5b1-37a0d49c924d",
+      "siteId": "6bb9ac9c-f5b7-4400-b3fa-9c46b575336d",
+      "siteTitle": "COSC-3P71-D02-S01-LEC",
+      "title": "COSC 3P71 Assignment 1 - Copy",
+      "toUser": "351be00fc7dfc2ed036975ad165d7149",
+      "url": "https:\/\/lms.brocku.ca\/portal\/directtool\/0aea55c2-b5d5-4af7-be7c-53628d2373c5?assignmentId=569ba4e8-18f4-4d1f-b5b1-37a0d49c924d&assignmentReference=\/assignment\/a\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/569ba4e8-18f4-4d1f-b5b1-37a0d49c924d&panel=Main&sakai_action=doView_submission"
+    },
+    {
+      "alertType": "ACADEMIC",
+      "deferred": false,
+      "event": "asn.new.assignment",
+      "eventDate": {
+        "epochSecond": 1603985762,
+        "nano": 0
+      },
+      "fromDisplayName": "Cody Dennis",
+      "fromUser": "b7c7335357acbb313ed07c8d7e1c85a4",
+      "id": 5536118,
+      "ref": "\/assignment\/a\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/cb44e800-8b7a-46e8-8926-0fddfae5499b",
+      "siteId": "6bb9ac9c-f5b7-4400-b3fa-9c46b575336d",
+      "siteTitle": "COSC-3P71-D02-S01-LEC",
+      "title": "COSC 3P71 Assignment 2: Source Code - Copy",
+      "toUser": "351be00fc7dfc2ed036975ad165d7149",
+      "url": "https:\/\/lms.brocku.ca\/portal\/directtool\/0aea55c2-b5d5-4af7-be7c-53628d2373c5?assignmentId=cb44e800-8b7a-46e8-8926-0fddfae5499b&assignmentReference=\/assignment\/a\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/cb44e800-8b7a-46e8-8926-0fddfae5499b&panel=Main&sakai_action=doView_submission"
+    },
+    {
+      "alertType": "ACADEMIC",
+      "deferred": false,
+      "event": "asn.grade.submission",
+      "eventDate": {
+        "epochSecond": 1604275497,
+        "nano": 0
+      },
+      "fromDisplayName": "Cody Dennis",
+      "fromUser": "b7c7335357acbb313ed07c8d7e1c85a4",
+      "id": 5603297,
+      "ref": "\/assignment\/s\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/68ec80fa-d24d-4bcf-894b-98a5dab593c9\/13e2c1fd-697a-498e-861d-9ef607944725",
+      "siteId": "6bb9ac9c-f5b7-4400-b3fa-9c46b575336d",
+      "siteTitle": "COSC-3P71-D02-S01-LEC",
+      "title": "COSC 3P71 Assignment 1",
+      "toUser": "351be00fc7dfc2ed036975ad165d7149",
+      "url": "https:\/\/lms.brocku.ca\/portal\/directtool\/0aea55c2-b5d5-4af7-be7c-53628d2373c5?assignmentId=68ec80fa-d24d-4bcf-894b-98a5dab593c9&assignmentReference=\/assignment\/a\/6bb9ac9c-f5b7-4400-b3fa-9c46b575336d\/68ec80fa-d24d-4bcf-894b-98a5dab593c9&panel=Main&sakai_action=doView_submission"
+    }
+  ],
+  "i18n": {
+    "commentCreated": " commented on your post",
+    "wallPost": " posted on your wall",
+    "academicCommentCreated": " commented on your post, or on a post you commented on, in \"{0}\"",
+    "statusUpdate": " updated their status",
+    "clear": "Clear",
+    "friendRequest": " sent you a friend request",
+    "message": " sent you a message",
+    "clearAll": "Clear All",
+    "accept": "Accept",
+    "view": "View",
+    "assignmentCreated": " created a new assignment \"{0}\" in \"{1}\"",
+    "postComment": " commented on your post",
+    "unrecognisedAlert": "Unrecognised alert",
+    "assignmentSubmissionGraded": " graded your submission for assignment \"{0}\" in \"{1}\"",
+    "academicLessonBuilderCommentCreate": " commented on a lessons page in \"{0}\"",
+    "noAlerts": "No alerts",
+    "ignore": "Ignore",
+    "friendConfirm": " confirmed your friend request",
+    "announcement": " added a new announcement \"{0}\" in \"{1}\""
+  }
+}
